@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+}
+#main1{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: animate 30s ease-in-out infinite;
+    animation: animate 30s ease-in-out infinite;
+}
+@-webkit-keyframes animate{
+    0%,100%{
+        background-image: url('img/b1.jpg');
+    }
+    30%{
+        background-image: url('img/b2.jpg');
+    }
+    50%{
+        background-image: url('img/b3.jpg');
+    }
+    70%{
+        background-image: url('img/b4.jpg');
+    }
+    90%{
+        background-image: url('img/b5.jpg');
+    }
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url('img/b1.jpg');
+    }
+    20%{
+        background-image: url('img/b2.jpg');
+    }
+    40%{
+        background-image: url('img/b3.jpg');
+    }
+    60%{
+        background-image: url('img/b4.jpg');
+    }
+    80%{
+        background-image: url('img/b5.jpg');
+    }
+}
+.nav-bar{
+    margin: auto;
+    border-radius: 6px;
+    width: 98%;
+    /* height: 50vh; */
+    height: 8vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    background:#dfddd8;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,.7);
+}
+.logo img{
+    width:80px;
+    margin: 15px 20px 0px;
+}
+.nav-left{
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+}
+.nav-right{
+    display: flex;
+    flex-basis: 40%;
+    /* border: 2px solid blue; */
+}
+.nav-left ul,.nav-right ul{
+    display: flex;
+}
+.nav-left ul li a,.nav-right ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    /* -webkit-transition: all 3s; */
+    /* transition: all 3s; */
+    /* border: 2px solid; */
+}
+.nav-right ul{
+    /* border: 2px solid; */
+    margin-left: 170px;
+}
+.nav-left ul li,.nav-right ul li{
+    list-style-type:none;
+    /* border: 2px solid ; */
+    margin:18px 25px 0px;
+}
+.cart-box{
+    position: relative;
+    margin-left: 50px;
+    top: 10px;
+    display:flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: #202f46;
+}
+.cart-box h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.nav-left a span,.nav-right a span{
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:black; 
+    transition: .4s;
+}
+.nav-left a:hover span,.nav-right a:hover span{
+    width: 100%;
+}
+
+
+
+
+/* ----------main2---------- */
+#main2{
+    width: 100%;
+    background: rgb(240, 240, 240);
+}
+.img-care,.img-journey{
+    margin-top: 0px;
+    padding-top: 100px;
+}
+.img-journey img, .img-care img{
+    /* border: 2px solid; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height:100%;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,.7);
+}
+.journey h1, .care h1{
+    display: inline;
+    position: relative;
+    /* border: 2px solid; */
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5px 37px 0px;
+}
+.journey h3,.care h3{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px 37px;
+}
+.journey h1 span,.care h1 span{
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:black; 
+    transition: .4s;
+}
+.journey h1:hover span,.care h1:hover span{
+    width: 100%;
+}
+
+/* ------main3-------- */
+#main3{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(240, 240, 240);
+    /* position: absolute; */
+}
+.store{
+    padding-top: 150px;
+    display: flex;
+}
+.store-img-left img{
+    margin-left: 55px;
+    width: 90%;
+}
+.left-store h1{
+    /* border: 2px solid; */
+    position: relative;
+    font-weight: 400;
+    display: inline;
+    margin-left: 55px;
+}
+.right-store h1{
+    /* border: 2px solid; */
+    position: relative;
+    font-weight: 400;
+    margin-left: 45px;
+    display: inline;
+}
+.store-img-right img{
+    margin-left: 45px;
+    width: 90%;
+}
+.left-store,.right-store{
+    /* border: 2px solid; */
+    flex-basis: 50%;
+}
+.left-store h1 span,.right-store h1 span{
+    width: 0%;
+    height: .5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:black; 
+    transition: .4s;
+}
+.left-store h1:hover span,.right-store h1:hover span{
+    width: 100%;
+}
